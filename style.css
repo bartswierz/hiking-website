@@ -1,0 +1,85 @@
+/* h1 {
+  color: blue;
+} */
+
+* {
+  /* padding: 100; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* This would be the DEFAULT font-size */
+  /* font-size: 10px; */
+  /* 10 px / 16px = 0.652 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  color: #444;
+}
+
+/* h1 {
+  font-size: 5rem;
+} */
+
+.container {
+  /* 120rem * 10px(62.5%)= 1200px 
+  Aligns our content in the center*/
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: rgb(38, 185, 1, 0.5);
+
+  /* 0 padding top/bot. & 40px padding left/right */
+  padding: 0rem 4rem;
+  /* Separates our logo placeholder and nav list items */
+  justify-content: space-between;
+}
+
+.main-nav {
+  justify-content: space-between;
+}
+
+.nav-list {
+  /* displays list in horizontal direction */
+  display: flex;
+  /* remove bulletpoints */
+  list-style: none;
+  /* create gap between list items */
+  gap: 2rem;
+  /* increase font-size of nav buttons */
+  font-size: 2.2rem;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: auto auto;
+}
+
+.hero-title {
+  /* align-items: center; */
+  /* justify-content: center; */
+  text-align: center;
+}
+
+.hero-message {
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* moves text to center of container */
+  text-align: center;
+}
+
+.section-hero {
+  max-width: 130rem;
+  font-size: 4rem;
+  align-items: center;
+  justify-content: center;
+  background: rgb(74, 74, 167, 0.4);
+}
