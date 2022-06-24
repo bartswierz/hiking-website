@@ -96,6 +96,19 @@ body {
 /* GRID SECTION */
 /*******************************************/
 
+.grid-col-2 {
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 /*******************************************/
 /* HERO SECTION */
 /*******************************************/
@@ -154,7 +167,66 @@ body {
 /* ADVENTURE TYPE SECTION */
 /*******************************************/
 
+.center {
+  /* centers item for us */
+  text-align: center;
+}
+
 .section-adventurer {
-  font-size: 1.8rem;
-  display: flex;
+  font-size: 2rem;
+  display: grid;
+
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  /* border: 0.2rem solid rgb(0, 141, 35); */
+}
+
+.adventurer-title {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.calm-adventurer {
+  /* background-color: #999; */
+  /* border: 0.3rem solid rgb(0, 141, 35); */
+  border: solid;
+  padding: 2rem;
+}
+
+.ultimate-adventurer {
+  /* background-color: #999; */
+  border-color: 2rem solid green;
+  /* border: 0.3rem rgb(0, 141, 35); */
+  border: solid;
+  padding: 2rem;
+}
+
+.adventurer-header {
+  text-align: center;
+}
+
+.adventurer-btn {
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 4px;
+  color: rgb(0, 141, 35, 0.8);
+  border: 0.4rem solid rgb(0, 141, 35);
+  border-radius: 7px;
+}
+
+.adventurer-list {
+  padding: 2rem;
+  list-style: none;
+}
+
+.adventurer-btn:hover {
+  background-color: rgb(119, 119, 119, 0.2);
+}
+
+/* Color on click */
+.adventurer-btn:active {
+  background-color: rgb(0, 141, 35, 0.8);
+  color: #fff;
 }
