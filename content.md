@@ -12,6 +12,14 @@ Kayak:
 -$50 Two Person Kayak
 -Pets not allowed
 
+# Layout
+
+-Navigation Bar
+-Hero Section/Image
+-Z-Pattern(4 Activties)
+-Hiking
+-Kayaking -
+
 # Three-Four Package Levels(Names)
 
 # Basic/Bronze Adventure Package(Hiking/Fishing FREE)
@@ -33,21 +41,22 @@ Kayak:
 
 # Land Activitiess
 
--Hiking(FREE)
--Ziplining
--Bike Riding
--Camping(Cabins for rent $x per night)
+-Hiking(FREE) --Relaxing/Calm
+-Bike Riding --Relaxing/Calm
+-Camping(Cabins for rent $x per night) --Relaxing/Calm
+-Ziplining --Adrenaline/Ultimate
 
 # Water Activities
 
--Kayaking
--Canoeing
--White Water Rafting
--Swimming
--Boat Tours
--JetSki Rentals
--Tubing Rentals
--Water Skiing
+-Kayaking --Relaxing/Calm
+-Canoeing --Relaxing/Calm
+-Swimming --Relaxing/Calm
+-Scenic Boat Tours --Relaxing/Calm
+-White Water Rafting --Adrenaline/Ultimate
+-SpeedBoat Adventure Tour --Adrenaline/Ultimate
+-JetSki Rentals --Adrenaline/Ultimate
+-Tubing Rentals --Adrenaline/Ultimate
+-Water Skiing --Adrenaline/Ultimate
 
 # FREE Activities
 
