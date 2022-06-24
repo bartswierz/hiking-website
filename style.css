@@ -38,9 +38,16 @@ body {
   background-color: rgb(38, 185, 1, 0.5);
 
   /* 0 padding top/bot. & 40px padding left/right */
-  padding: 0rem 4rem;
+  padding: 2rem 4rem;
   /* Separates our logo placeholder and nav list items */
   justify-content: space-between;
+}
+
+/*******************************************/
+/* BUTTONS */
+/*******************************************/
+
+.nav-btn {
 }
 
 .main-nav {
@@ -58,10 +65,9 @@ body {
   font-size: 2.2rem;
 }
 
-.hero {
-  max-width: 130rem;
-  margin: auto auto;
-}
+/*******************************************/
+/* HERO SECTION */
+/*******************************************/
 
 .hero-title {
   /* align-items: center; */
@@ -77,7 +83,11 @@ body {
 }
 
 .section-hero {
+  /* max-width keeps it at 130rem max
+  margin 0 auto gives margin on left and right automatically adjusted to keep our container in the middle when we shrink and stretch the viewport */
   max-width: 130rem;
+  margin: 0 auto;
+
   font-size: 4rem;
   align-items: center;
   justify-content: center;
