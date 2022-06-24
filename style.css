@@ -179,6 +179,7 @@ body {
   justify-content: space-between;
   margin-bottom: 4rem;
   /* border: 0.2rem solid rgb(0, 141, 35); */
+  gap: 3rem;
 }
 
 .adventurer-title {
