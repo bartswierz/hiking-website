@@ -1,3 +1,14 @@
+/* COLORS USED: 
+BACKGROUND
+#f6f8fb
+
+TEXT
+#444
+
+BUTTONS
+rgb(0, 141, 35, 0.8)
+
+/*
 /* h1 {
   color: blue;
 } */
@@ -42,7 +53,7 @@ body {
   display: flex;
   align-items: center;
   /* background-color: rgb(38, 185, 1, 0.5); */
-
+  background-color: #f6f8fb;
   /* 0 padding top/bot. & 40px padding left/right */
   padding: 2rem 4rem;
   /* Separates our logo placeholder and nav list items */
@@ -232,7 +243,7 @@ body {
 }
 
 /*******************************************/
-/* CALM ADVENTURER DESCRIPTION SECTION */
+/* PART 1: CALM ADVENTURER DESCRIPTION SECTION */
 /*******************************************/
 
 .calm-section {
@@ -277,6 +288,7 @@ body {
 }
 
 .check-btn {
+  /* add space between two buttons */
   margin-left: 2rem;
 }
 
@@ -294,6 +306,100 @@ body {
 
 .calm-btn:link,
 .calm-btn:visited {
+  /* background-color: #dddddd; */
+}
+
+.gallery {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 10rem;
+  gap: 1rem;
+  /* row-gap: 1rem; */
+  column-gap: 2rem;
+  margin-right: 1rem;
+  margin-top: 0rem;
+}
+
+.gallery-item {
+  /* Giving it a max-width/height */
+  max-width: 19rem;
+  max-height: 190rem;
+  /* setting images to 190px width height */
+  width: 19rem;
+  height: 19rem;
+}
+
+.activity-name {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/*******************************************/
+/* PART 2: ULTIMATE DESCRIPTION SECTION */
+/*******************************************/
+.ultimate-section {
+  border: solid;
+  background-color: #f6f8fb;
+  /* max-width: 120rem; */
+  /* keeps calm-section centered at all times */
+  margin: 5rem auto;
+  padding: 1rem;
+  /* margin-top: 5rem;
+  margin-bottom */
+}
+
+.ultimate-title {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+}
+
+.ultimate-description {
+  font-size: 1.5rem;
+}
+
+/* will hold our Description section(Left) and Photo Gallery(Right) */
+.ultimate-content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.ultimate-text {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.ultimate-btn {
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+  color: rgb(0, 141, 35, 0.8);
+  border: 0.25rem solid rgb(0, 141, 35, 0.8);
+  border-radius: 7px;
+}
+
+.check-btn {
+  /* add space between two buttons */
+  margin-left: 2rem;
+}
+
+.adventurer-list {
+  padding: 2rem;
+  list-style: none;
+}
+
+/* Color on click */
+.ultimate-btn:hover,
+.ultimate-btn:active {
+  background-color: rgb(0, 141, 35, 0.8);
+  color: #fff;
+}
+
+.ultimate-btn:link,
+.ultimate-btn:visited {
   /* background-color: #dddddd; */
 }
 
