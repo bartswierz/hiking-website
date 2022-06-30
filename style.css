@@ -212,7 +212,7 @@ body {
   font-weight: 700;
   padding: 0.4rem 0.8rem 0.4rem 0.8rem;
   color: rgb(0, 141, 35, 0.8);
-  border: 0.25rem solid rgb(0, 141, 35);
+  border: 0.25rem solid rgb(0, 141, 35, 0.8);
   border-radius: 7px;
 }
 
@@ -246,6 +246,7 @@ body {
 
 .calm-title {
   margin-bottom: 1rem;
+  font-size: 4rem;
 }
 
 .calm-description {
@@ -260,6 +261,8 @@ body {
 
 .calm-text {
   margin-bottom: 3rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
 .calm-btn {
@@ -269,8 +272,12 @@ body {
   font-weight: 700;
   padding: 0.4rem 0.8rem 0.4rem 0.8rem;
   color: rgb(0, 141, 35, 0.8);
-  border: 0.25rem solid rgb(0, 141, 35);
+  border: 0.25rem solid rgb(0, 141, 35, 0.8);
   border-radius: 7px;
+}
+
+.check-btn {
+  margin-left: 2rem;
 }
 
 .adventurer-list {
@@ -278,14 +285,16 @@ body {
   list-style: none;
 }
 
-.calm-btn:hover {
-  background-color: rgb(119, 119, 119, 0.2);
-}
-
 /* Color on click */
+.calm-btn:hover,
 .calm-btn:active {
   background-color: rgb(0, 141, 35, 0.8);
   color: #fff;
+}
+
+.calm-btn:link,
+.calm-btn:visited {
+  /* background-color: #dddddd; */
 }
 
 .gallery {
@@ -296,13 +305,17 @@ body {
   gap: 1rem;
   /* row-gap: 1rem; */
   column-gap: 2rem;
+  margin-right: 1rem;
+  margin-top: 0rem;
 }
 
 .gallery-item {
-  /* max-width: 40rem;
-  max-height: 40rem; */
-  max-width: 21rem;
-  max-height: 21rem;
+  /* Giving it a max-width/height */
+  max-width: 19rem;
+  max-height: 190rem;
+  /* setting images to 190px width height */
+  width: 19rem;
+  height: 19rem;
 }
 
 .activity-name {
@@ -356,11 +369,12 @@ body {
 
 .member-btn {
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 700;
   padding: 0.4rem 0.8rem 0.4rem 0.8rem;
   color: rgb(0, 141, 35, 0.8);
-  border: 0.25rem solid rgb(0, 141, 35);
+  border: 0.25rem solid rgb(0, 141, 35, 0.8);
   border-radius: 7px;
 
   /* positioning button at bottom/center of container */
@@ -373,15 +387,13 @@ body {
   font-size: 1.5rem;
 }
 
-/* .member-btn:hover {
-  background-color: red;
-} */
-
-.member-btn:hover {
-  background-color: rgb(119, 119, 119, 0.2);
+.member-btn:link,
+.member-btn:visited {
+  /* background-color: #dddddd; */
 }
 
 /* Color on click */
+.member-btn:hover,
 .member-btn:active {
   background-color: rgb(0, 141, 35, 0.8);
   color: #fff;
