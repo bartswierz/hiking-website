@@ -30,6 +30,7 @@ html {
 }
 
 body {
+  font-family: sans-serif;
   width: 100%;
   height: auto;
 }
@@ -530,10 +531,87 @@ body {
 }
 
 /*******************************************/
-/* TESTIMONIALS SECTION - Displays all available activities */
+/* TESTIMONIALS SECTION - Display past customer testimonials */
 /*******************************************/
 
 .testimonials-section {
   font-size: 5rem;
   font-weight: 700;
+}
+
+/*******************************************/
+/* EMAIL SECTION - Sign up section */
+/*******************************************/
+
+.email-section {
+  border: solid;
+  margin-bottom: 5rem;
+  padding: 1rem;
+  border-radius: 11px;
+}
+
+.email-container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.email-header {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  text-decoration: underline 0.25rem;
+}
+
+.email-subheading {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.email-text {
+  font-size: 1.9rem;
+}
+
+/* Changes the <input placeholder=""> text INSIDE newsletter-form to light grey */
+.newsletter-form input::placeholder {
+  color: #aaa;
+  font-size: 1.5rem;
+  /* Give placeholder text space away from left size of input box */
+  padding-left: 0.5rem;
+}
+
+.newsletter-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem 1rem;
+  /* align-items: ; */
+  /* aligns 4 inputs into center of container */
+  align-items: center;
+  justify-items: center;
+}
+/* 247 x 27 */
+.newsletter-btn {
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 9px;
+  margin-top: 1.5rem;
+  padding: 0rem 6.8rem 0rem 6.8rem;
+  color: rgb(0, 141, 35, 0.8);
+  border: 0.25rem solid rgb(0, 141, 35, 0.8);
+  width: 24.7rem;
+  height: 2.47rem;
+}
+
+/* Customize the 3 input fields in our newsletter-form */
+.newsletter-form input {
+  font-size: 2rem;
+  border-radius: 7px;
+}
+
+.newsletter-form label {
+  /* display block puts our label text ABOVE input box */
+  display: block;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  margin-bottom: 0.3rem;
 }
