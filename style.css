@@ -32,8 +32,8 @@ body {
   max-width: 120rem;
   /*Aligns our content in the center*/
   margin: 0 auto;
-  /* Position set to relative to help position our buttons */
-  position: relative;
+  /* Position set to relative to help position our buttons
+  position: relative; */
 }
 
 .header {
@@ -194,17 +194,9 @@ body {
   margin-bottom: 1rem;
 }
 
-.calm-adventurer {
+.adventurer-type {
   /* background-color: #999; */
   /* border: 0.3rem solid rgb(0, 141, 35); */
-  border: solid;
-  padding: 2rem;
-}
-
-.ultimate-adventurer {
-  /* background-color: #999; */
-  border-color: 2rem solid green;
-  /* border: 0.3rem rgb(0, 141, 35); */
   border: solid;
   padding: 2rem;
 }
@@ -240,17 +232,107 @@ body {
 }
 
 /*******************************************/
+/* CALM ADVENTURER DESCRIPTION SECTION */
+/*******************************************/
+
+.calm-section {
+  border: solid;
+  background-color: #f6f8fb;
+  /* max-width: 120rem; */
+  /* keeps calm-section centered at all times */
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.calm-title {
+  margin-bottom: 1rem;
+}
+
+.calm-description {
+  font-size: 1.5rem;
+}
+
+/* will hold our Description section(Left) and Photo Gallery(Right) */
+.calm-content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.calm-text {
+  margin-bottom: 3rem;
+}
+
+.calm-btn {
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+  color: rgb(0, 141, 35, 0.8);
+  border: 0.25rem solid rgb(0, 141, 35);
+  border-radius: 7px;
+}
+
+.adventurer-list {
+  padding: 2rem;
+  list-style: none;
+}
+
+.calm-btn:hover {
+  background-color: rgb(119, 119, 119, 0.2);
+}
+
+/* Color on click */
+.calm-btn:active {
+  background-color: rgb(0, 141, 35, 0.8);
+  color: #fff;
+}
+
+.gallery {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 10rem;
+  gap: 1rem;
+  /* row-gap: 1rem; */
+  column-gap: 2rem;
+}
+
+.gallery-item {
+  /* max-width: 40rem;
+  max-height: 40rem; */
+  max-width: 21rem;
+  max-height: 21rem;
+}
+
+.activity-name {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/*******************************************/
 /* MEMBER SECTION */
 /*******************************************/
 
 .member {
   /* background-color: #999; */
+  max-width: 120rem;
+
   margin-bottom: 2rem;
   /* border: 0.4rem solid rgb(0, 141, 35);
    */
   border: solid;
   padding: 1rem;
   padding-bottom: 5rem;
+
+  /* Position set to relative to help position our buttons */
+  position: relative;
+  /* background-color: #f6f8fb; */
+}
+
+.member-background {
+  background-color: #f6f8fb;
+  margin-bottom: 2rem;
 }
 
 .member-header {
@@ -289,4 +371,18 @@ body {
 
 .member-description {
   font-size: 1.5rem;
+}
+
+/* .member-btn:hover {
+  background-color: red;
+} */
+
+.member-btn:hover {
+  background-color: rgb(119, 119, 119, 0.2);
+}
+
+/* Color on click */
+.member-btn:active {
+  background-color: rgb(0, 141, 35, 0.8);
+  color: #fff;
 }
