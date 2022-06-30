@@ -49,7 +49,7 @@ body {
 
 .header {
   /* background-color: rgb(202, 201, 201); */
-  color: rgb(0, 141, 35);
+  color: rgb(0, 141, 35, 0.8);
   display: flex;
   align-items: center;
   /* background-color: rgb(38, 185, 1, 0.5); */
@@ -58,6 +58,8 @@ body {
   padding: 2rem 4rem;
   /* Separates our logo placeholder and nav list items */
   justify-content: space-between;
+  /* adds color to bottom of block for separation */
+  border-bottom: 0.25rem solid rgb(0, 141, 35, 0.8);
 }
 
 /*******************************************/
@@ -210,6 +212,8 @@ body {
   /* border: 0.3rem solid rgb(0, 141, 35); */
   border: solid;
   padding: 2rem;
+  /* Gives our container round edges */
+  border-radius: 20px;
 }
 
 .adventurer-header {
@@ -247,12 +251,15 @@ body {
 /*******************************************/
 
 .calm-section {
-  border: solid;
+  /* Uncomment to visually see container */
+  /* border: solid; */
+
   background-color: #f6f8fb;
   /* max-width: 120rem; */
   /* keeps calm-section centered at all times */
   margin: 0 auto;
   padding: 1rem;
+  border-top: 0.25rem solid rgb(0, 141, 35, 0.8);
 }
 
 .calm-title {
@@ -339,14 +346,16 @@ body {
 /* PART 2: ULTIMATE DESCRIPTION SECTION */
 /*******************************************/
 .ultimate-section {
-  border: solid;
+  /* border: solid; */
   background-color: #f6f8fb;
   /* max-width: 120rem; */
   /* keeps calm-section centered at all times */
-  margin: 5rem auto;
+  margin: 0rem auto;
   padding: 1rem;
   /* margin-top: 5rem;
   margin-bottom */
+  /* adds color to bottom of block for separation */
+  border-top: 0.25rem solid rgb(0, 141, 35, 0.8);
 }
 
 .ultimate-title {
@@ -447,6 +456,9 @@ body {
   /* Position set to relative to help position our buttons */
   position: relative;
   /* background-color: #f6f8fb; */
+
+  /* Gives our container round edges */
+  border-radius: 11px;
 }
 
 .member-background {
@@ -457,6 +469,9 @@ body {
 .member-header {
   font-size: 5.5rem;
   margin-bottom: 1rem;
+
+  /* adds color to bottom of block for separation */
+  border-top: 0.25rem solid rgb(0, 141, 35, 0.8);
 }
 
 .member-title {
@@ -503,4 +518,22 @@ body {
 .member-btn:active {
   background-color: rgb(0, 141, 35, 0.8);
   color: #fff;
+}
+
+/*******************************************/
+/* CAROUSEL SECTION - Displays all available activities */
+/*******************************************/
+
+.carousel-section {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+/*******************************************/
+/* TESTIMONIALS SECTION - Displays all available activities */
+/*******************************************/
+
+.testimonials-section {
+  font-size: 5rem;
+  font-weight: 700;
 }
