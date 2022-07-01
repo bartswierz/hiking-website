@@ -67,12 +67,8 @@ body {
 /* BUTTONS */
 /*******************************************/
 
-/* color change when cursor is on button */
-.nav-btn:hover {
-  background-color: rgb(119, 119, 119, 0.2);
-}
-
-/* Color on click */
+/* Color on hover/click */
+.nav-btn:hover,
 .nav-btn:active {
   background-color: rgb(0, 141, 35, 0.8);
   color: #fff;
@@ -172,7 +168,6 @@ body {
   margin 0 auto gives margin on left and right automatically adjusted to keep our container in the middle when we shrink and stretch the viewport */
   max-width: 130rem;
   margin: 0 auto;
-
   font-size: 4rem;
   align-items: center;
   justify-content: center;
@@ -237,11 +232,8 @@ body {
   list-style: none;
 }
 
-.adventurer-btn:hover {
-  background-color: rgb(119, 119, 119, 0.2);
-}
-
 /* Color on click */
+.adventurer-btn:hover,
 .adventurer-btn:active {
   background-color: rgb(0, 141, 35, 0.8);
   color: #fff;
@@ -259,7 +251,8 @@ body {
   /* max-width: 120rem; */
   /* keeps calm-section centered at all times */
   margin: 0 auto;
-  padding: 1rem;
+  /* adds padding left and right side so text isnt against edge of page */
+  padding: 1rem 1rem 1rem 2rem;
   border-top: 0.25rem solid rgb(0, 141, 35, 0.8);
 }
 
@@ -289,7 +282,7 @@ body {
   align-items: center;
   text-decoration: none;
   font-weight: 700;
-  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+  padding: 1.2rem 1.8rem 1.2rem 1.8rem;
   color: rgb(0, 141, 35, 0.8);
   border: 0.25rem solid rgb(0, 141, 35, 0.8);
   border-radius: 7px;
@@ -347,12 +340,13 @@ body {
 /* PART 2: ULTIMATE DESCRIPTION SECTION */
 /*******************************************/
 .ultimate-section {
+  /* max-width: fit-content; */
   /* border: solid; */
   background-color: #f6f8fb;
   /* max-width: 120rem; */
   /* keeps calm-section centered at all times */
   margin: 0rem auto;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 2rem;
   /* margin-top: 5rem;
   margin-bottom */
   /* adds color to bottom of block for separation */
@@ -384,8 +378,9 @@ body {
   text-align: center;
   align-items: center;
   text-decoration: none;
+  font-size: 1.9rem;
   font-weight: 700;
-  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+  padding: 1.2rem 1.8rem 1.2rem 1.8rem;
   color: rgb(0, 141, 35, 0.8);
   border: 0.25rem solid rgb(0, 141, 35, 0.8);
   border-radius: 7px;
@@ -494,7 +489,8 @@ body {
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 700;
-  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+  /* padding: 0.4rem 0.8rem 0.4rem 0.8rem; */
+  padding: 0.8rem 1.8rem 0.8rem 1.8rem;
   color: rgb(0, 141, 35, 0.8);
   border: 0.25rem solid rgb(0, 141, 35, 0.8);
   border-radius: 7px;
@@ -519,6 +515,7 @@ body {
 .member-btn:active {
   background-color: rgb(0, 141, 35, 0.8);
   color: #fff;
+  border-color: #fff;
 }
 
 /*******************************************/
@@ -528,6 +525,7 @@ body {
 .carousel-section {
   font-size: 5rem;
   font-weight: 700;
+  padding: 1rem 1rem 1rem 2rem;
 }
 
 /*******************************************/
@@ -537,6 +535,44 @@ body {
 .testimonials-section {
   font-size: 5rem;
   font-weight: 700;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+/*******************************************/
+/* PRICING SECTION - Display pricing options */
+/*******************************************/
+
+.pricing-section {
+  display: flex;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border: solid;
+}
+
+.pricing-calm {
+  border: solid;
+  padding: 3rem;
+}
+
+/* resize img to fit in card layout */
+.pricing-img {
+  height: 19rem;
+  width: 19rem;
+}
+
+.pricing-header {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-list {
+  line-height: 3rem;
+  /* text-align: center; */
+}
+
+.pricing-btn {
+  text-decoration: none;
+  border-radius: 9px;
 }
 
 /*******************************************/
@@ -569,14 +605,7 @@ body {
 
 .email-text {
   font-size: 1.9rem;
-}
-
-/* Changes the <input placeholder=""> text INSIDE newsletter-form to light grey */
-.newsletter-form input::placeholder {
-  color: #aaa;
-  font-size: 1.5rem;
-  /* Give placeholder text space away from left size of input box */
-  padding-left: 0.5rem;
+  line-height: 2.5rem;
 }
 
 .newsletter-form {
@@ -591,21 +620,31 @@ body {
 }
 /* 247 x 27 */
 .newsletter-btn {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: 700;
   border-radius: 9px;
   margin-top: 1.5rem;
-  padding: 0rem 6.8rem 0rem 6.8rem;
+  /* button shape */
+  padding: 0.8rem 9.8rem 0.8rem 9.8rem;
   color: rgb(0, 141, 35, 0.8);
   border: 0.25rem solid rgb(0, 141, 35, 0.8);
-  width: 24.7rem;
-  height: 2.47rem;
+  /* width: 24.7rem;
+  height: 2.47rem; */
 }
 
 /* Customize the 3 input fields in our newsletter-form */
 .newsletter-form input {
   font-size: 2rem;
   border-radius: 7px;
+  padding: 0rem 3rem 0rem 0.5rem;
+}
+
+/* Changes the <input placeholder=""> text INSIDE newsletter-form to light grey */
+.newsletter-form input::placeholder {
+  color: #aaa;
+  font-size: 1.5rem;
+  /* Give placeholder text space away from left size of input box */
+  /* padding-left: -1rem; */
 }
 
 .newsletter-form label {
@@ -614,4 +653,10 @@ body {
   font-size: 1.5rem;
   margin-right: 1rem;
   margin-bottom: 0.3rem;
+}
+
+.newsletter-btn:hover,
+.newsletter-btn:active {
+  background-color: rgb(0, 141, 35, 0.8);
+  color: #fff;
 }
