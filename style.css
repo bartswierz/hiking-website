@@ -40,7 +40,8 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
+  /* font-family: "Rubik", sans-serif; */
   width: 100%;
   height: auto;
 }
@@ -337,6 +338,15 @@ body {
   line-height: 2.5rem;
 }
 
+.activities-available {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.calm-list {
+  margin-bottom: 2rem;
+}
+
 .calm-btn {
   text-align: center;
   align-items: center;
@@ -375,10 +385,10 @@ body {
   /* grid-template-columns: 1fr 1fr; */
   grid-template-columns: 1fr 1fr 1fr;
   margin-left: 10rem;
-  gap: 1rem;
-  row-gap: 1rem;
-  column-gap: 2rem;
-  margin-right: 1rem;
+  /* gap: 1rem; */
+  /* row-gap: 1rem; */
+  /* column-gap: 2rem; */
+  /* margin-right: 1rem; */
 }
 
 .gallery-item {
@@ -502,7 +512,7 @@ body {
 
 .member-header {
   font-size: 5.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
   /* adds color to bottom of block for separation */
   border-top: 0.25rem solid rgb(0, 141, 35, 0.8);
@@ -592,27 +602,34 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
-  column-gap: 2rem;
   font-size: 2rem;
   margin-bottom: 8rem;
-  border: solid;
   /* equal space between our 3 flex items(2 cards + 1 Info section) */
   justify-content: center;
   column-gap: 5rem;
 }
 
+.pricing-purchase {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.pricing-cost {
+  font-size: 3rem;
+}
+
 .pricing-heading {
   font-size: 4rem;
   margin-top: 8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding-left: 2rem;
 }
 
-.pricing-calm {
-  border: solid;
-  /* padding: 3rem; */
-  padding-bottom: 3rem;
-  /* background-size: cover; */
+.box-shadow {
+  /* left(-)right(+), up(-)down(+), blur radius, spread radius*/
+  box-shadow: 0rem 2rem 3rem 2rem rgb(0, 0, 0, 0.2);
 }
 
 /* resize img to fit in card layout */
@@ -623,15 +640,16 @@ body {
 }
 
 .pricing-header {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .pricing-btn {
   display: inline-block;
   text-decoration: none;
   font-weight: 600;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   padding: 10px;
 
   /* clear buttons with green on hover/active */
@@ -664,7 +682,7 @@ body {
   text-align: center;
   padding: 1rem;
   /* max-width: 15%; */
-  border: solid;
+  /* border: solid; */
 }
 
 .member-excl {
@@ -683,7 +701,10 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  line-height: 3rem;
+  /* align-items: baseline; */
+  align-content: space-between;
+  /* line-height: 3rem; */
+  gap: 1.5rem;
 }
 /*******************************************/
 /* EMAIL SECTION - Sign up section */
