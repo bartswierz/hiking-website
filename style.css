@@ -2,6 +2,8 @@
 BACKGROUND
 #f6f8fb
 
+background: linear-gradient( to right, rgba(0, 141, 35, 0.7), rgba(0, 98, 189, 0.7));
+
 TEXT
 #444
 
@@ -27,6 +29,12 @@ html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
   color: #444;
+  /* background-color: rgba(3, 122, 39, 0.527); */
+  /* background: linear-gradient(
+    to right,
+    rgba(0, 141, 35, 0.6),
+    rgba(0, 98, 189, 0.6)
+  ); */
 }
 
 body {
@@ -50,29 +58,30 @@ body {
 
 .header {
   /* background-color: rgb(202, 201, 201); */
-  color: rgb(0, 141, 35, 0.8);
   display: flex;
   align-items: center;
-  /* background-color: rgb(38, 185, 1, 0.5); */
-  background-color: #f6f8fb;
-  /* 0 padding top/bot. & 40px padding left/right */
   padding: 2rem 4rem;
+
   /* Separates our logo placeholder and nav list items */
   justify-content: space-between;
+
   /* adds color to bottom of block for separation */
   border-bottom: 0.25rem solid rgb(0, 141, 35, 0.8);
+  color: rgb(0, 141, 35);
+  /* background-color: #f6f8fb; */
+  /* background-color: rgba(118, 119, 118, 0.616); */
+  background: linear-gradient(
+    to right,
+    rgba(0, 141, 35, 0.7),
+    rgba(0, 98, 189, 0.7)
+  );
+  /* background: linear-gradient(to right, #e66465, #9198e5); */
+  /* background-color: rgb(0, 190, 149); */
 }
 
 /*******************************************/
 /* BUTTONS */
 /*******************************************/
-
-/* Color on hover/click */
-.nav-btn:hover,
-.nav-btn:active {
-  background-color: rgb(0, 141, 35, 0.8);
-  color: #fff;
-}
 
 .nav-btn {
   text-decoration: none;
@@ -85,9 +94,42 @@ body {
   /* padding: 1rem; */
   padding: 0.4rem 0.8rem 0.4rem 0.8rem;
   /* Adds Colored Border to our button */
+  /* border: 0.25rem solid rgb(0, 141, 35, 0.8); */
+  /* Rounds button corners */
+  /* border-radius: 1rem; */
+}
+
+/* Color on hover/click */
+.nav-btn:hover,
+.nav-btn:active {
+  /* background-color: rgb(0, 141, 35, 0.8); */
+  color: #fff;
+}
+
+.nav-btn-book {
+  text-decoration: none;
+  display: inline-block;
+  justify-content: space-around;
+  font-weight: 800;
+  color: #fff;
+  background-color: rgb(0, 141, 35);
+  border-color: #fff;
+
+  /* padding to allow text to fit */
+  /* padding: 1rem; */
+  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+  /* Adds Colored Border to our button */
   border: 0.25rem solid rgb(0, 141, 35, 0.8);
   /* Rounds button corners */
   border-radius: 1rem;
+}
+
+.nav-btn-book:hover,
+.nav-btn-book:active {
+  /* background-color: rgb(0, 141, 35); */
+  background-color: none;
+  color: #fff;
+  border-color: #fff;
 }
 
 .main-nav {
@@ -102,7 +144,7 @@ body {
   /* create gap between list items */
   gap: 2rem;
   /* increase font-size of nav buttons */
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 /*******************************************/
@@ -125,6 +167,37 @@ body {
 /*******************************************/
 /* HERO SECTION */
 /*******************************************/
+
+.section-hero {
+  /* max-width keeps it at 130rem max
+  margin 0 auto gives margin on left and right automatically adjusted to keep our container in the middle when we shrink and stretch the viewport */
+  max-width: 130rem;
+  max-height: 80rem;
+  margin: 0 auto;
+  font-size: 4rem;
+  align-items: center;
+  justify-content: center;
+  /* background: rgb(74, 74, 167, 0.2); */
+  /* background-size: cover; */
+  margin-bottom: 2rem;
+
+  background-image: linear-gradient(
+      to right,
+      /* rgba(187, 4, 4, 0.9),
+      rgba(237, 9, 245, 0.6) */
+        rgba(34, 34, 34, 0.3),
+      rgba(34, 34, 34, 0.3)
+    ),
+    url("../img/heroImage2.jpg");
+  /* url("../img/heroImage2.jpg"); */
+  background-size: cover;
+}
+
+.hero-img {
+  /* width: 100%; */
+  width: 0%;
+  height: 80rem;
+}
 
 .hero-banner {
   /* setting position relative to position our Hero Title & Message on top of image */
@@ -154,25 +227,6 @@ body {
   position: absolute;
   top: 60%;
   width: 100%;
-}
-
-.hero-img {
-  width: 100%;
-  /* height: 90rem; */
-  height: 80rem;
-  /* background-size: cover; */
-}
-
-.section-hero {
-  /* max-width keeps it at 130rem max
-  margin 0 auto gives margin on left and right automatically adjusted to keep our container in the middle when we shrink and stretch the viewport */
-  max-width: 130rem;
-  margin: 0 auto;
-  font-size: 4rem;
-  align-items: center;
-  justify-content: center;
-  /* background: rgb(74, 74, 167, 0.2); */
-  /* background-size: cover; */
 }
 
 /*******************************************/
@@ -316,16 +370,15 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   margin-left: 10rem;
   gap: 1rem;
-  /* row-gap: 1rem; */
+  row-gap: 1rem;
   column-gap: 2rem;
   margin-right: 1rem;
-  margin-top: 0rem;
 }
 
 .gallery-item {
   /* Giving it a max-width/height */
   max-width: 19rem;
-  max-height: 190rem;
+  max-height: 19rem;
   /* setting images to 190px width height */
   width: 19rem;
   height: 19rem;
@@ -378,7 +431,7 @@ body {
   text-align: center;
   align-items: center;
   text-decoration: none;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   font-weight: 700;
   padding: 1.2rem 1.8rem 1.2rem 1.8rem;
   color: rgb(0, 141, 35, 0.8);
@@ -406,27 +459,6 @@ body {
 .ultimate-btn:link,
 .ultimate-btn:visited {
   /* background-color: #dddddd; */
-}
-
-.gallery {
-  display: grid;
-  /* grid-template-columns: 1fr 1fr; */
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-left: 10rem;
-  gap: 1rem;
-  /* row-gap: 1rem; */
-  column-gap: 2rem;
-  margin-right: 1rem;
-  margin-top: 0rem;
-}
-
-.gallery-item {
-  /* Giving it a max-width/height */
-  max-width: 19rem;
-  max-height: 190rem;
-  /* setting images to 190px width height */
-  width: 19rem;
-  height: 19rem;
 }
 
 .activity-name {
@@ -491,9 +523,16 @@ body {
   font-weight: 700;
   /* padding: 0.4rem 0.8rem 0.4rem 0.8rem; */
   padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+
+  /* clear buttons with green on hover/active */
   color: rgb(0, 141, 35, 0.8);
   border: 0.25rem solid rgb(0, 141, 35, 0.8);
   border-radius: 7px;
+
+  /* GREEN buttons with grey font and grey border */
+  /* border: 0.25rem solid #333;
+  background-color: rgb(0, 141, 35, 0.8);
+  color: #333; */
 
   /* positioning button at bottom/center of container */
   position: absolute;
@@ -564,13 +603,16 @@ body {
 
 .pricing-calm {
   border: solid;
-  padding: 3rem;
+  /* padding: 3rem; */
+  padding-bottom: 3rem;
+  /* background-size: cover; */
 }
 
 /* resize img to fit in card layout */
 .pricing-img {
   height: 19rem;
-  width: 19rem;
+  width: 37rem;
+  /* background-size: cover; */
 }
 
 .pricing-header {
@@ -585,12 +627,15 @@ body {
   margin-top: 1rem;
   padding: 10px;
 
+  /* clear buttons with green on hover/active */
   color: rgb(0, 141, 35, 0.8);
   border: 0.25rem solid rgb(0, 141, 35, 0.8);
   border-radius: 9px;
 
-  /* position: absolute; */
-  /* transform: translateY(90%); */
+  /* GREEN buttons with grey font and grey border */
+  border: 0.25rem solid #333;
+  background-color: rgb(0, 141, 35, 0.8);
+  color: #333;
 }
 
 .pricing-btn:hover,
@@ -601,10 +646,16 @@ body {
 
 /* for positioning button at the bottom of box */
 .pricing-member-btn {
+  position: absolute;
+  bottom: 6%;
+  left: 23%;
+  right: 23%;
 }
+
 .pricing-member {
-  /* position: relative; */
+  position: relative;
   text-align: center;
+  padding: 1rem;
   /* max-width: 15%; */
   border: solid;
 }
@@ -641,6 +692,13 @@ body {
 .email-container {
   max-width: 80rem;
   margin: 0 auto;
+  border-radius: 9px;
+
+  background: linear-gradient(
+    to right,
+    rgba(0, 141, 35, 0.7),
+    rgba(0, 98, 189, 0.7)
+  );
 }
 
 .email-header {
@@ -672,21 +730,28 @@ body {
 }
 /* 247 x 27 */
 .newsletter-btn {
-  font-size: 1.9rem;
+  font-size: 2.3rem;
   font-weight: 700;
   border-radius: 9px;
   margin-top: 1.5rem;
-  /* button shape */
-  padding: 0.8rem 9.8rem 0.8rem 9.8rem;
-  color: rgb(0, 141, 35, 0.8);
-  border: 0.25rem solid rgb(0, 141, 35, 0.8);
-  /* width: 24.7rem;
-  height: 2.47rem; */
+  padding: 0.8rem 12rem 0.8rem 12rem;
+
+  border: 0.25rem solid #333;
+  background-color: rgb(0, 141, 35, 0.8);
+  color: #333;
+}
+
+.newsletter-btn:hover,
+.newsletter-btn:active {
+  background-color: rgb(0, 141, 35, 0.8);
+  color: #fff;
+  /* border-color: #fff; */
+  cursor: pointer;
 }
 
 /* Customize the 3 input fields in our newsletter-form */
 .newsletter-form input {
-  font-size: 2rem;
+  font-size: 2.5rem;
   border-radius: 7px;
   padding: 0rem 3rem 0rem 0.5rem;
 }
@@ -694,7 +759,7 @@ body {
 /* Changes the <input placeholder=""> text INSIDE newsletter-form to light grey */
 .newsletter-form input::placeholder {
   color: #aaa;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   /* Give placeholder text space away from left size of input box */
   /* padding-left: -1rem; */
 }
@@ -705,10 +770,4 @@ body {
   font-size: 1.5rem;
   margin-right: 1rem;
   margin-bottom: 0.3rem;
-}
-
-.newsletter-btn:hover,
-.newsletter-btn:active {
-  background-color: rgb(0, 141, 35, 0.8);
-  color: #fff;
 }
