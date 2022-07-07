@@ -3,6 +3,7 @@ BACKGROUND
 #f6f8fb
 
 background: linear-gradient( to right, rgba(0, 141, 35, 0.7), rgba(0, 98, 189, 0.7));
+rgb(0, 132, 255)
 
 TEXT
 #444
@@ -35,6 +36,7 @@ html {
     rgba(0, 141, 35, 0.6),
     rgba(0, 98, 189, 0.6)
   ); */
+  /* background-color: #555; */
 }
 
 body {
@@ -70,11 +72,13 @@ body {
   color: rgb(0, 141, 35);
   /* background-color: #f6f8fb; */
   /* background-color: rgba(118, 119, 118, 0.616); */
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     rgba(0, 141, 35, 0.7),
     rgba(0, 98, 189, 0.7)
-  );
+  ); */
+
+  background: linear-gradient(to right, #f6f8fb, rgba(151, 151, 151, 0.74));
   /* background: linear-gradient(to right, #e66465, #9198e5); */
   /* background-color: rgb(0, 190, 149); */
 }
@@ -110,10 +114,9 @@ body {
   text-decoration: none;
   display: inline-block;
   justify-content: space-around;
-  font-weight: 800;
+  font-weight: 600;
   color: #fff;
   background-color: rgb(0, 141, 35);
-  border-color: #fff;
 
   /* padding to allow text to fit */
   /* padding: 1rem; */
@@ -126,10 +129,10 @@ body {
 
 .nav-btn-book:hover,
 .nav-btn-book:active {
-  /* background-color: rgb(0, 141, 35); */
+  background-color: rgb(1, 133, 34);
   background-color: none;
   color: #fff;
-  border-color: #fff;
+  /* border-color: #fff; */
 }
 
 .main-nav {
@@ -254,6 +257,7 @@ body {
 
 .adventurer-title {
   font-size: 5rem;
+  margin-top: 8rem;
   margin-bottom: 1rem;
 }
 
@@ -306,8 +310,10 @@ body {
   /* keeps calm-section centered at all times */
   margin: 0 auto;
   /* adds padding left and right side so text isnt against edge of page */
-  padding: 1rem 1rem 1rem 2rem;
+  padding: 1rem 1rem 7rem 2rem;
   border-top: 0.25rem solid rgb(0, 141, 35, 0.8);
+  margin-top: 8rem;
+  /* padding-bottom: 8rem; */
 }
 
 .calm-title {
@@ -399,7 +405,8 @@ body {
   /* max-width: 120rem; */
   /* keeps calm-section centered at all times */
   margin: 0rem auto;
-  padding: 1rem 1rem 1rem 2rem;
+  margin-top: 8rem;
+  padding: 1rem 1rem 7rem 2rem;
   /* margin-top: 5rem;
   margin-bottom */
   /* adds color to bottom of block for separation */
@@ -473,13 +480,12 @@ body {
 .member {
   /* background-color: #999; */
   max-width: 120rem;
-
-  margin-bottom: 2rem;
+  margin: 0 auto;
   /* border: 0.4rem solid rgb(0, 141, 35);
    */
   border: solid;
-  padding: 1rem;
-  padding-bottom: 5rem;
+  padding: 1rem 1rem 6rem 3rem;
+  /* margin: 0rem 5rem 2rem 5rem; */
 
   /* Position set to relative to help position our buttons */
   position: relative;
@@ -491,7 +497,7 @@ body {
 
 .member-background {
   background-color: #f6f8fb;
-  margin-bottom: 2rem;
+  margin-bottom: 8rem;
 }
 
 .member-header {
@@ -588,7 +594,7 @@ body {
 
   column-gap: 2rem;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 8rem;
   border: solid;
   /* equal space between our 3 flex items(2 cards + 1 Info section) */
   justify-content: center;
@@ -597,6 +603,7 @@ body {
 
 .pricing-heading {
   font-size: 4rem;
+  margin-top: 8rem;
   margin-bottom: 1rem;
   padding-left: 2rem;
 }
