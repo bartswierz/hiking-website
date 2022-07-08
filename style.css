@@ -181,20 +181,17 @@ body {
   font-size: 4rem;
   align-items: center;
   justify-content: center;
-  /* background: rgb(74, 74, 167, 0.2); */
   /* background-size: cover; */
   margin-bottom: 2rem;
 
   background-image: linear-gradient(
       to right,
-      /* rgba(187, 4, 4, 0.9),
-      rgba(237, 9, 245, 0.6) */
-        rgba(34, 34, 34, 0.3),
+      rgba(34, 34, 34, 0.3),
       rgba(34, 34, 34, 0.3)
     ),
     url("../img/heroImage2.jpg");
   /* url("../img/heroImage2.jpg"); */
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 .hero-img {
@@ -206,9 +203,6 @@ body {
 .hero-banner {
   /* setting position relative to position our Hero Title & Message on top of image */
   position: relative;
-
-  /* background-image: linear-gradient(rgba(202, 4, 4, 0.9)),
-  url(img/heroImage2.jpg); */
 }
 
 .hero-title {
@@ -607,13 +601,15 @@ body {
   /* equal space between our 3 flex items(2 cards + 1 Info section) */
   justify-content: center;
   column-gap: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
 }
 
 .pricing-purchase {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 2rem;
+  padding: 2rem 2rem 3rem 2rem;
 }
 
 .pricing-cost {
@@ -629,15 +625,44 @@ body {
 
 .box-shadow {
   /* left(-)right(+), up(-)down(+), blur radius, spread radius*/
-  box-shadow: 0rem 2rem 3rem 2rem rgb(0, 0, 0, 0.2);
+  /* box-shadow: 0rem 2rem 3rem 2rem rgb(0, 0, 0, 0.2); */
+  box-shadow: 0rem 2rem 3rem 2rem rgb(0, 0, 0, 0.5);
 }
 
+.pricing-background {
+  /* background-color: #0055d4; */
+}
+
+.card-background {
+  background-color: #f6f8fb;
+  /* position: absolute; */
+  /* z-index: 5; */
+}
 /* resize img to fit in card layout */
 .pricing-img {
   height: 19rem;
   width: 37rem;
   /* background-size: cover; */
 }
+
+.pricing-img-background {
+  /* spans it across this section */
+  width: max-content;
+  /* keeps it at the height of container to not go in other sections */
+  height: 80rem;
+  position: absolute;
+  z-index: -999;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(34, 34, 34, 0.3),
+      rgba(214, 4, 4, 0.884)
+    ),
+    url("../img/pricing-background1.jpg");
+  /* background-image: cover; */
+}
+/* rgba(34, 34, 34, 0.3),
+      rgba(34, 34, 34, 0.3) */
 
 .pricing-header {
   font-size: 2.3rem;
@@ -648,9 +673,9 @@ body {
 .pricing-btn {
   display: inline-block;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   /* margin-top: 1rem; */
-  padding: 10px;
+  padding: 4px;
 
   /* clear buttons with green on hover/active */
   color: rgb(0, 141, 35, 0.8);
@@ -680,7 +705,7 @@ body {
 .pricing-member {
   position: relative;
   text-align: center;
-  padding: 1rem;
+  /* padding: 1rem; */
   /* max-width: 15%; */
   /* border: solid; */
 }
