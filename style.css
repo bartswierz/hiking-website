@@ -182,7 +182,8 @@ body {
 .section-hero {
   /* max-width keeps it at 130rem max
   margin 0 auto gives margin on left and right automatically adjusted to keep our container in the middle when we shrink and stretch the viewport */
-  max-width: 100%;
+  /* max-width: 100%; */
+  max-width: 130rem;
   max-height: 80rem;
   margin: 0 auto;
   font-size: 4rem;
@@ -209,7 +210,7 @@ body {
 
 .hero-img {
   /* width: 100%; */
-  width: 0%;
+  width: 0;
   height: 80rem;
 }
 
