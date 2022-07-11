@@ -671,7 +671,8 @@ body {
 
 .pricing-img-background {
   /* spans it across this section */
-  width: 192rem;
+  /* width: 192rem; */
+  width: 100%;
   /* keeps it at the height of container to not go in other sections */
   height: 84rem;
   position: absolute;
